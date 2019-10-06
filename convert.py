@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-import pandas as pd
 import json
 import sys
 import math
+import pandas as pd
 
+
+# Helper Functions
 def xml_obj(dict):
     string = ""
     for key in dict.keys():
