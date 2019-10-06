@@ -17,6 +17,9 @@ Usage: ./convert.py [json | xmf] [OPTION]
         output to file
 
 `./convert.py json`     :    prints out JSON encoding
+
 `./convert.py json -f`  :    prints out JSON encoding and writes JSON to a file
+
 `./convert.py xml`      :    prints out XML encoding
+
 `./convert.py xml -f`   :    prints out XML encoding and writes XML to a file
