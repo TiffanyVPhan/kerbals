@@ -1,0 +1,46 @@
+[
+    {
+        "Id": 1,
+        "FirstName": "Jebediah",
+        "LastName": "Kerman",
+        "Job": "Pilot",
+        "Level": 5,
+        "IsFemale": 0,
+        "Courage": -0.3959,
+        "Stupidity": -0.5498,
+        "BadS": 1
+    },
+    {
+        "Id": 2,
+        "FirstName": "Bill",
+        "LastName": "Kerman",
+        "Job": "Engineer",
+        "Level": 3,
+        "IsFemale": 0,
+        "Courage": -31.8205,
+        "Stupidity": 31.8205,
+        "BadS": 0
+    },
+    {
+        "Id": 3,
+        "FirstName": "Bob",
+        "LastName": "Kerman",
+        "Job": "Scientist",
+        "Level": 3,
+        "IsFemale": 0,
+        "Courage": 1.4715,
+        "Stupidity": -0.36,
+        "BadS": 0
+    },
+    {
+        "Id": 4,
+        "FirstName": "Valentina",
+        "LastName": "Kerman",
+        "Job": "Pilot",
+        "Level": 3,
+        "IsFemale": 1,
+        "Courage": 0.0945,
+        "Stupidity": -1.4715,
+        "BadS": 1
+    }
+]
