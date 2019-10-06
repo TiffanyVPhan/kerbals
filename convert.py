@@ -43,11 +43,12 @@ if sys.argv[1] == 'json':
     print(kerbals_json)
 
     # Writing JSON array to file
-    if sys.argv[2] == '-f':
-        with open('kerbals.json', 'w') as f:
-            json.dump(kerbals_dict, f, indent = 4)
-    else:
-        print("\nInvalid flag: {}".format(sys.argv[2]))
+    if len(sys.argv) == 3:
+        if sys.argv[2] == '-f':
+            with open('kerbals.json', 'w') as f:
+                json.dump(kerbals_dict, f, indent = 4)
+        else:
+            print("\nInvalid flag: {}".format(sys.argv[2]))
  
 
  # XML
@@ -60,11 +61,12 @@ elif sys.argv[1] == 'xml':
     print(xml)
 
     # Writing XML array to file
-    if sys.argv[2] == '-f':
-        file = open('kerbals.xml', 'w')
-        file.write(xml)
-    else:
-        print("\nInvalid flag: {}".format(sys.argv[2]))
+    if len(sys.argv) == 3:
+        if sys.argv[2] == '-f':
+            file = open('kerbals.xml', 'w')
+            file.write(xml)
+        else:
+            print("\nInvalid flag: {}".format(sys.argv[2]))
 
 # User input Error Checking
 else:
