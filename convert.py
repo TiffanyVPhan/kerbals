@@ -2,8 +2,6 @@
 import json
 import sys
 import math
-import pandas as pd
-
 
 # Helper Functions
 def xml_obj(dict):
