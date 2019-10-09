@@ -17,17 +17,25 @@ def transform(val):
     """Calculate the true values of `val` in percentages."""
     return (100*math.atan(val) + 50*math.pi) / math.pi
 
-kerbals = pd.read_csv('kerbals.csv', delimiter=',')
-
-# Transforming Courage and Stupidity columns to percentages.
-kerbals['Courage'] = kerbals['Courage'].apply(transform)
-kerbals['Stupidity'] = kerbals['Stupidity'].apply(transform)
-
-# Converting kerbals dataframe to a dictionary
-kerbals_dict = kerbals.to_dict(orient='record')
+kerbals = []
+with open('kerbals.csv') as f:
+    keys = f.readline().strip().split(',')
+    keys = [i.replace('"','') for i in keys]
+    for line in f:
+        mydict = {}
+        for index, val in enumerate(line.strip().split(',')):
+            if keys[index] == 'FirstName' or keys[index] == 'LastName' or keys[index] == 'Job':
+                mydict[keys[index]] = val.replace('"', '')
+            else:
+                # Transforming Courage and Stupidity columns to percentages.
+                if keys[index] == 'Courage' or keys[index] == 'Stupidity':
+                    mydict[keys[index]] = transform(float(val))
+                else:
+                    mydict[keys[index]] = int(val)
+        kerbals.append(mydict)
 
 # User input error checking
-if len(sys.argv) < 2: 
+if len(sys.argv) < 2:
      print('Not enough arguments.')
      exit(1)
 
@@ -39,14 +47,13 @@ elif len(sys.argv) > 3:
 if sys.argv[1] == 'json':
 
     # Converting dictionary to JSON array
-    kerbals_json = json.dumps(kerbals_dict, indent = 4)
-    print(kerbals_json)
+    print(json.dumps(kerbals))
 
     # Writing JSON array to file
     if len(sys.argv) == 3:
         if sys.argv[2] == '-f':
             with open('kerbals.json', 'w') as f:
-                json.dump(kerbals_dict, f, indent = 4)
+                json.dump(kerbals, f, indent = 4)
         else:
             print("\nInvalid flag: {}".format(sys.argv[2]))
  
@@ -55,8 +62,8 @@ if sys.argv[1] == 'json':
 elif sys.argv[1] == 'xml':
     xml = ""
     xml += '<?xml version="1.0" encoding="UTF-8"?>\n<Kerbals>\n'
-    for i in range(len(kerbals_dict)):
-        xml += '  <Kerbal>\n' + xml_obj(kerbals_dict[i]) + '  </Kerbal>\n'
+    for i in range(len(kerbals)):
+        xml += '  <Kerbal>\n' + xml_obj(kerbals[i]) + '  </Kerbal>\n'
     xml += '</Kerbals>'
     print(xml)
 
