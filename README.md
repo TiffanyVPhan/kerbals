@@ -3,13 +3,6 @@ This is my solution to the interview problem given by LASP. The `convert.py` fil
 
 The `Courage` and `Stupidity` columns for each column was transformed to their 'true' values, which are percents between 0 and 100.
 
-## Installation
-
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install pandas.
-
-```bash
-pip install pandas
-```
 
 ## Run
 Usage: ./convert.py [json | xmf] [OPTION]
