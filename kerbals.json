@@ -6,8 +6,8 @@
         "Job": "Pilot",
         "Level": 5,
         "IsFemale": 0,
-        "Courage": -0.3959,
-        "Stupidity": -0.5498,
+        "Courage": 38.00077073640879,
+        "Stupidity": 33.99889156469681,
         "BadS": 1
     },
     {
@@ -17,8 +17,8 @@
         "Job": "Engineer",
         "Level": 3,
         "IsFemale": 0,
-        "Courage": -31.8205,
-        "Stupidity": 31.8205,
+        "Courage": 1.0000005010379809,
+        "Stupidity": 98.99999949896203,
         "BadS": 0
     },
     {
@@ -28,8 +28,8 @@
         "Job": "Scientist",
         "Level": 3,
         "IsFemale": 0,
-        "Courage": 1.4715,
-        "Stupidity": -0.36,
+        "Courage": 81.00044936204088,
+        "Stupidity": 39.00062424748615,
         "BadS": 0
     },
     {
@@ -39,8 +39,8 @@
         "Job": "Pilot",
         "Level": 3,
         "IsFemale": 1,
-        "Courage": 0.0945,
-        "Stupidity": -1.4715,
+        "Courage": 52.99912194956845,
+        "Stupidity": 18.999550637959118,
         "BadS": 1
     }
 ]

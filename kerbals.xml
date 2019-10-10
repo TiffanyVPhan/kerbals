@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Kerbals>
+  <Kerbal>
+    <Id>1</Id>
+    <FirstName>Jebediah</FirstName>
+    <LastName>Kerman</LastName>
+    <Job>Pilot</Job>
+    <Level>5</Level>
+    <IsFemale>0</IsFemale>
+    <Courage>38.00077073640879</Courage>
+    <Stupidity>33.99889156469681</Stupidity>
+    <BadS>1</BadS>
+  </Kerbal>
+  <Kerbal>
+    <Id>2</Id>
+    <FirstName>Bill</FirstName>
+    <LastName>Kerman</LastName>
+    <Job>Engineer</Job>
+    <Level>3</Level>
+    <IsFemale>0</IsFemale>
+    <Courage>1.0000005010379809</Courage>
+    <Stupidity>98.99999949896203</Stupidity>
+    <BadS>0</BadS>
+  </Kerbal>
+  <Kerbal>
+    <Id>3</Id>
+    <FirstName>Bob</FirstName>
+    <LastName>Kerman</LastName>
+    <Job>Scientist</Job>
+    <Level>3</Level>
+    <IsFemale>0</IsFemale>
+    <Courage>81.00044936204088</Courage>
+    <Stupidity>39.00062424748615</Stupidity>
+    <BadS>0</BadS>
+  </Kerbal>
+  <Kerbal>
+    <Id>4</Id>
+    <FirstName>Valentina</FirstName>
+    <LastName>Kerman</LastName>
+    <Job>Pilot</Job>
+    <Level>3</Level>
+    <IsFemale>1</IsFemale>
+    <Courage>52.99912194956845</Courage>
+    <Stupidity>18.999550637959118</Stupidity>
+    <BadS>1</BadS>
+  </Kerbal>
+</Kerbals>
